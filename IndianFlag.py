@@ -8,8 +8,9 @@ def Main():
     turtle = Turtle()
     turtle.hideturtle()
     window = Screen()
-    window.setup(1.0,1.0,None,None) #make window full screen
-    time.sleep(10) #make thread to sleep 
+    window.setup(1.0,1.0,None,None)
+    window.title("Indian flag")
+    time.sleep(10)
     DrawIndianFlag(500, (150, 150))
     HoldWinodow()
 
