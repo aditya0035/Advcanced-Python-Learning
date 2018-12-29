@@ -5,6 +5,7 @@ def Main():
     global turtle
     global window
     turtle = Turtle()
+    turtle.hideturtle()
     window = Screen()
     DrawIndianFlag(500, (150, 150))
     HoldWinodow()
