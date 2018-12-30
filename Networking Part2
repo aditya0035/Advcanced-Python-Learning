@@ -1,0 +1,11 @@
+"""
+UDP:User Datagram Protocol
+Un-Reliable Connection-Less Based Protocol
+i.e. it send data whatever there is computer or not not guranteed
+Low Overhead as does not check but fast
+Used for VOIP,Online Games,Streaming
+
+Here we will user recvfrom() and sento()
+this is because UDP is connectionless we need to tell the data where to go when we send it
+
+"""
