@@ -1,0 +1,47 @@
+"""
+Networking is a huge field so we will require to stick to what is necessary for programming
+Networking is the concept of two programs communicating across network Whatever it is client-client
+client-server client itself
+Client:A end device interfacing with human
+Server:A device providing serve to a client
+Client Server model is most common model like web browser
+Peer-to-peer model useful for service that can't be constantly available
+client connect to other client with out use of it's core it basically client-server model
+Address:An Ip Address
+Port:A port number e.g. 5000
+Usually port number from 1-1024 are reserved for core protocol
+try something above 1024 but below 65535
+Sockets:Scokets are the programming abstraction for connection
+They allow us to communicate in a bidirectional manner
+once they are connected or ready to transmit.We can use them to send dat
+and receive data
+They implement the common Transport protocols TCP and UDP
+
+Sokets Methods:
+1.socket(socket_family,socket_type)
+Create a new socket
+Socket_Inet -for IPv4 family
+Socket_Stream for TCP socket type
+2.bind((hostname,port))
+Binda takes a tuple of host and port and bind them to socket
+3.listen()
+start listening for TCP connection
+4.accept()
+Accepts a connection when found(return a new socket)
+
+----------On client side we use below method---------
+5.connect((hostname,port))
+Takes tuple of the address of server and port
+6.recv(buffer)
+Tries to grab data from TCP connection.(Waits)
+The buffer size determines how many bytes of data to recieve at a time
+6.Send(bytes)
+attempt to send the bytes given to it
+7.close()
+close a socket/connection and free the port
+
+TCP(Transmission control protocol)
+Reliable connection based protocol
+Ordered & Error Checked(simple checksum)
+Used by WebBrowsers,Email,SSH,FTP etc
+"""
